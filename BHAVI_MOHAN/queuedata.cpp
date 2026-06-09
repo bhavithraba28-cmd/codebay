@@ -92,3 +92,6 @@ int main()
 
     return 0;
 }
+/*insert, delete,search and delete using class array
+
+*/
