@@ -20,3 +20,4 @@ int main ()
     return 0;
 
 }
+/*loop code for if, else if and while*/
