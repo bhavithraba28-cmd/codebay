@@ -44,6 +44,7 @@ private:
     return 0;
 
 }
+/*code for base class and access specifiers*/
  
 
 
