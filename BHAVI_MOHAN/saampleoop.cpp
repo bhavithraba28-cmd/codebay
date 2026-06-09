@@ -51,3 +51,4 @@ int main()
   c.table();
 
  }
+/* code to understand for mathematical problems*/
