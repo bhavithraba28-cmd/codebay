@@ -95,3 +95,6 @@ int main()
 
     return 0;
 }
+/*insert, display, delete using structure for queue
+
+*/
