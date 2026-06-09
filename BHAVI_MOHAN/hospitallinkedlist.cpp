@@ -298,3 +298,4 @@ int main() {
     freeMemory();
     return 0;
 }
+/*linked list using structure for hospital to add doctors, appointment, patient with menu option*/
