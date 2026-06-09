@@ -113,3 +113,6 @@ int main()
     delete[] students;
     return 0;
 }
+/*pointer and dynamic constructor using structure  to determine student grades
+
+*/
