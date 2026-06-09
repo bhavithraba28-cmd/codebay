@@ -98,7 +98,5 @@ int main()
  a.sumn();
   a.max2nd();
   a.Lrotate();
-   
-
-
 }
+/*base class in array to determine max of array. second max of number, sum of N number,left rotation of an array and right rotation of an array*/
