@@ -112,3 +112,5 @@ int main()
 
     return 0;
 }
+/*code to understand base class and constructor for palindrome,primecheck, finonacci, factorial and sum of N numbers
+**/
