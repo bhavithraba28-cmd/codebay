@@ -47,3 +47,4 @@ int main()
 
 
 }
+/*polymorphisms by class*/
