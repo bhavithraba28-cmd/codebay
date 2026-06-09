@@ -25,4 +25,4 @@ int main()
     }
 
     return 0;
-}
+}/*conditional statement like if, else if and switch*/
