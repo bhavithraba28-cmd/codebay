@@ -162,3 +162,4 @@ int main()
   
     return 0;
 }
+/*linked list through main function for operation like inser, delete and search and display*/
