@@ -108,3 +108,6 @@ class doctor: public hospital
         return 0;
 
     }
+/*hierarchical inheritance and encapsulation with access specifiers.
+
+*/
