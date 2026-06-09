@@ -108,3 +108,6 @@ int main()
 
     return 0;
 }
+/*code for sum of array, max of array, even number of array, odd number of array, sum of even array number and sum of pair of given number in  number.
+
+*/
