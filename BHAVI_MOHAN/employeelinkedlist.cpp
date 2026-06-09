@@ -283,4 +283,6 @@ int main()
     freeemployees();
     freeemployers();
     return 0;
-}
+}/*linked list for employee and employer to determine salary and grauitity for employees using structure
+
+*/
