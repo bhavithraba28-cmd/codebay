@@ -18,3 +18,4 @@ int main ()
     }
     return 0;
 }
+/*simple code to understand bitwise operator*/
