@@ -92,3 +92,6 @@ int main()
 
     return 0;
 }
+/*addtion, sub, mul, div and fibonacci using pointer by passing parameters
+
+*/
