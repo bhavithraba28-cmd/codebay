@@ -26,3 +26,6 @@ int main ()
 
 
 }
+/*to understand declaraion for data types
+
+*/
