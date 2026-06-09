@@ -186,3 +186,5 @@ int main()
     freerecords();
     return 0;
 }
+/*code for babycare to determine baby is helathy using structure for understanding
+*/
