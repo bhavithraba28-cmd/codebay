@@ -30,3 +30,4 @@ int main()
 
     return 0;
 }
+/*simple program for function overload with sum of 2,3,data type*/
