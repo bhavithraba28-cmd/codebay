@@ -102,3 +102,6 @@ int main()
 
     return 0;
 }
+/*pointers with parameter passing function using structure by add,mul and swaap
+
+*/
