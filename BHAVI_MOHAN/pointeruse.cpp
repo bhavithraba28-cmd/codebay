@@ -75,3 +75,6 @@ int main()
 
     return 0;
 }
+/*pointers and paramter passing with menu option
+
+*/
