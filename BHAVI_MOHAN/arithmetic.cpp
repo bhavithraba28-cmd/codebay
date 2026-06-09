@@ -17,3 +17,4 @@ cout << div <<endl;
     cout << first + " " + second <<endl;
     return 0;
 }
+/* arithmetic operation for simple understanding */
