@@ -152,3 +152,4 @@ int main()
 
     return 0;
 }
+/*baseclass using parameter passing function in array for linear search, update, maximum , sort and reverse*/
