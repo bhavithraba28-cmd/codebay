@@ -193,3 +193,4 @@ int main()
 
     return 0;
 }
+/*code for matrix addition, multiplication, primary diagonal and secondary diagonal*/
