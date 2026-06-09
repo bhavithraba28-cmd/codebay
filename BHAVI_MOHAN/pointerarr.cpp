@@ -32,3 +32,6 @@ int main()
     findMax();
     return 0;
 }
+/*code for pointers using array for maths problems
+
+*/
