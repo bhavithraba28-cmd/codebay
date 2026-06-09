@@ -109,3 +109,6 @@ int main() {
 
     return 0;
 }
+/*double datatypes add, sub, mul, largest number, div , check oddeven and  using class
+
+*/
