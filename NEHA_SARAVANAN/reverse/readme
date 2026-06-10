@@ -1,0 +1,6 @@
+This program performs two number-based operations: reversing a number and checking whether a number is a palindrome. The reverse operation extracts each digit and reconstructs the number in reverse order, while the palindrome operation compares the reversed number with the original number to determine if they are the same. The program helps in understanding loops, arithmetic operations, digit extraction, and basic algorithmic problem-solving in C++.
+Technologies Used: C++, Loops, Conditional Statements, Arithmetic Operations
+* Reverse a given number
+* Check whether a number is a palindrome
+* User input for number processing
+* Demonstrates digit manipulation using modulus and division operations
