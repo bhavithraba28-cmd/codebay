@@ -1,0 +1,7 @@
+This program demonstrates fundamental searching techniques and array operations. It includes finding the maximum element in an array, performing Linear Search to locate an element by scanning the array sequentially, and Binary Search to efficiently find an element in a sorted array. The program allows users to enter array elements and search for specific values, helping to build a strong understanding of searching algorithms and array traversal techniques.
+Technologies Used: C++, Arrays, Searching Algorithms, Loops, Conditional Statements
+* Find the maximum element in an array
+* Linear Search implementation
+* Binary Search implementation
+* User input for array creation and searching
+* Demonstrates both sequential and efficient searching methods
