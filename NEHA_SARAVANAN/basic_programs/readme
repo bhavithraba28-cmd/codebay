@@ -4,9 +4,8 @@ Factorial Calculation Computes the factorial of a given number using a loop. Exa
 
 Fibonacci Series Generates the Fibonacci sequence up to the specified number of terms. Example: 0, 1, 1, 2, 3, 5, 8, ... Technologies Used: C++,Functions,Loops,Basic Input/Output
 
-In the odd.file it's basic programming concepts through three simple operations: checking whether a number is odd or even, finding the greatest among three numbers, and generating a multiplication table for a given number. The program takes user input and uses conditional statements and loops to perform the required tasks. It is designed to help beginners understand decision-making, comparison operators, and iterative programming in C++.
+In the odd.file it's basic programming concepts through three simple operations: 
+Checking whether a number is odd or even, 
+Finding the greatest among three numbers, 
+Generating a multiplication table for a given number. 
 Technologies Used: C++, Conditional Statements, Loops, User Input/Output
-Odd and Even Number Checker
-Greatest of Three Numbers Finder
-Multiplication Table Generator
-User-friendly console input and output
