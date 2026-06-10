@@ -1,0 +1,2 @@
+This program demonstrates basic matrix operations using 3×3 matrices. It allows users to enter two matrices and performs matrix addition and matrix multiplication. The program also includes an example of multiplication using diagonal matrices to illustrate matrix multiplication concepts. It is designed to help understand two-dimensional arrays, nested loops, matrix calculations, and algorithm implementation in C++.
+Technologies Used: C++, Arrays, Nested Loops, Matrix Operations
