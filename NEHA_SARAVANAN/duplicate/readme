@@ -1,0 +1,6 @@
+This program performs two common array operations: finding duplicate elements and reversing an array. The duplicate detection functionality sorts the array and identifies repeated elements, while the reverse functionality displays the array elements in reverse order. The program helps in understanding array manipulation, sorting techniques, traversal methods, and basic problem-solving concepts in C++.
+Technologies Used: C++, Arrays, Sorting, Loops, Standard Template Library (STL)
+Find duplicate elements in an array
+Reverse and display array elements
+User input for array creation
+Uses sorting to simplify duplicate detection
