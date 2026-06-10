@@ -1,0 +1,11 @@
+In this project, I implemented a Binary Tree using C++.
+* Created tree nodes dynamically using pointers.
+* Built a binary tree structure by connecting parent and child nodes.
+* Implemented Preorder traversal to visit nodes in root-left-right order.
+* Implemented Inorder traversal to visit nodes in left-root-right order.
+* Implemented Postorder traversal to visit nodes in left-right-root order.
+* Displayed the tree elements using different traversal techniques.
+* Used recursive functions to perform tree operations efficiently.
+* Implemented tree deletion to free allocated memory and avoid memory leaks.
+* Tested the tree structure and traversal outputs for correctness.
+This project helped me understand binary tree creation, tree traversal methods, recursion, dynamic memory allocation, and tree data structure concepts in C++.
