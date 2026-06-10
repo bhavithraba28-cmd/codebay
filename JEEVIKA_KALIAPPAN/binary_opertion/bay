@@ -1,0 +1,10 @@
+In this project, I implemented a Binary Search Tree (BST) using C++.
+* Created nodes dynamically to store data in the tree structure.
+* Implemented insertion operations to add elements into the Binary Search Tree.
+* Added searching functionality to find specific values in the tree.
+* Implemented tree traversal methods including Preorder, Inorder, and Postorder.
+* Found the minimum and maximum values present in the tree.
+* Used recursive functions to perform tree operations efficiently.
+* Implemented tree deletion to release dynamically allocated memory.
+* Tested different BST operations to verify correct functionality.
+This project helped me understand Binary Search Tree concepts, recursive programming, tree traversal techniques, dynamic memory management, and data structure implementation in C++.
