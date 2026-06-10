@@ -1,0 +1,5 @@
+This C++ program demonstrates two fundamental mathematical operations:
+
+Factorial Calculation Computes the factorial of a given number using a loop. Example: 5! = 5 × 4 × 3 × 2 × 1 = 120
+
+Fibonacci Series Generates the Fibonacci sequence up to the specified number of terms. Example: 0, 1, 1, 2, 3, 5, 8, ... Technologies Used: C++,Functions,Loops,Basic Input/Output
