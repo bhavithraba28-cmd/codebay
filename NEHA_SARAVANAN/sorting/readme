@@ -1,0 +1,8 @@
+This program demonstrates sorting and array techniques. It includes Bubble Sort for ascending order sorting, Selection Sort for efficient element selection and sorting, Descending Order Sorting, Moving Zeros to the End of an Array, and Sorting Even Numbers within an array. The program allows users to input arrays and observe the results of different sorting algorithms and array operations. It helps in understanding sorting techniques, array traversal, nested loops, conditional logic, and problem-solving approaches in C++.
+Technologies Used: C++, Arrays, Sorting Algorithms, Loops, Conditional Statements
+* Bubble Sort (Ascending Order)
+* Selection Sort (Ascending Order)
+* Descending Order Sorting
+* Move Zeros to the End of an Array
+* Sort Even Numbers in an Array
+* User Input for Array Operations
