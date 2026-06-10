@@ -1,0 +1,7 @@
+File 1: Linked List Insertion Operations
+
+This C++ program is the implementation of a singly linked list. It includes creating nodes dynamically, inserting elements at the beginning of the list, and inserting elements at the end of the list. The program also traverses and displays the linked list. It helps in understanding dynamic memory allocation, node creation, pointer manipulation, and basic linked list operations. Technologies Used: C++, Linked Lists, Pointers, Dynamic Memory Allocation
+
+File 2: Linked List Deletion Operations
+
+This C++ program is the deletion operations in a singly linked list. It supports deleting nodes from the beginning and the end of the list while handling edge cases such as empty lists and single-node lists. The program also traverses and displays the remaining elements after deletion. It helps in understanding memory management, pointer updates, and linked list manipulation. Technologies Used: C++, Linked Lists, Pointers, Dynamic Memory Allocation
