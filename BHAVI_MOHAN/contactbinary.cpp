@@ -100,18 +100,6 @@ void search(contact* temp, string key)
     else
        search(temp->right, key);
 }
-void parent(contact* temp, string key, contact* &parentNode)
-{
-    if(temp == nullptr)
-        return;
-    if(temp->name == key)
-        return;
-    parentNode = temp;
-    if(key < temp->name)
-        parent(temp->left, key, parentNode);
-    else
-        parent(temp->right, key, parentNode);
-}
 
 int main()
 {
@@ -216,15 +204,15 @@ int main()
         insert("Person98","99-098-0098","person98@example.com");
         insert("Person99","99-099-0099","person99@example.com");
         insert("Person100", "99-100-0100", "person100@example.com");
-        parent(root, "Person50", root);
         auto end = chrono::high_resolution_clock::now();
         cout<<"Insertion Time: "<< chrono::duration_cast<chrono::nanoseconds>(end - start).count() << " ns\n";
-        display();
         auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
         cout<<"\nExecution Time: " << duration.count() << " microseconds" << endl;
+        display();
         search(root, "Person50");
-        search(root, "Person69");
-        search(root, "Person79");
+        search(root, "Person72");
+        search(root, "Person11");
+        end = chrono::high_resolution_clock::now();
         cout << "Search Time: " << chrono::duration_cast<chrono::nanoseconds>(end - start).count()<< " ns\n";
         return 0;
 }
