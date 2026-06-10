@@ -1,0 +1,7 @@
+This program performs two basic string operations: string reversal and palindrome checking. 
+The reverse function displays the characters of a string in reverse order, while the palindrome function checks whether a given string reads the same forward and backward. The program helps in understanding string manipulation, character access, loops, and basic algorithmic logic in C++.
+Technologies Used: C++, Strings, Loops, Conditional Statements
+* Reverse a string
+* Check whether a string is a palindrome
+* User input for string processing
+* Demonstrates string traversal and manipulation techniques
