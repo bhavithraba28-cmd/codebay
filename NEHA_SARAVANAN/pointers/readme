@@ -1,0 +1,25 @@
+These programs are using pointers
+
+File 1: Swap and Maximum Element
+
+This program demonstrates the use of pointers for swapping two numbers and finding the maximum element in an array. The swap operation is performed by passing memory addresses to a function, while the maximum element is identified using pointer arithmetic. The program helps in understanding pointer manipulation, function arguments, and array traversal using pointers.
+
+Technologies Used: C++, Pointers, Arrays, Functions
+
+File 2: Call by Value, Call by Reference, and Array Sum
+
+This program demonstrates the difference between call by value and call by reference using pointers. It also includes an array sum calculation function. The program helps in understanding how pointers allow direct modification of variables and how arrays are passed to functions.
+
+Technologies Used:C++, Pointers, Arrays, Functions
+
+File 3: Dynamic Memory Allocation, Maximum-Minimum, and Array Reversal
+
+This program demonstrates dynamic memory allocation using pointers. It finds the maximum and minimum elements in an array and reverses the array using pointer operations. The program provides practical experience with dynamic arrays, pointer arithmetic, memory management, and array manipulation techniques.
+
+Technologies Used: C++, Dynamic Memory Allocation, Pointers, Arrays
+
+File 4: Student Management System Using Pointers
+
+This program implements a simple Student Management System using classes and pointers. It allows users to add and display student information through a menu-driven interface. The project demonstrates the use of pointers with objects, class structures, user input handling, and basic data management concepts.
+
+Technologies Used: C++, Classes, Objects, Pointers
