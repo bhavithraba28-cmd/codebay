@@ -1,0 +1,7 @@
+File 1: Doubly Linked List Insertion Operations
+
+This program demonstrates the implementation of a Doubly Linked List using dynamic memory allocation. It supports insertion of nodes at both the beginning and the end of the list while maintaining previous and next node connections. The program also traverses and displays the list elements. It helps in understanding node linking, bidirectional traversal, pointer management, and fundamental Doubly Linked List operations. Technologies Used: C++, Doubly Linked Lists, Pointers, Dynamic Memory Allocation
+
+File 2: Doubly Linked List Deletion Operations
+
+This program demonstrates deletion operations in a Doubly Linked List. It supports deleting nodes from both the beginning and the end of the list while correctly updating previous and next pointers. The program also includes list traversal and display functionality. It helps in understanding memory management, node removal, bidirectional links, and core Doubly Linked List concepts. Technologies Used: C++, Doubly Linked Lists, Pointers, Dynamic Memory Allocation, Structures
