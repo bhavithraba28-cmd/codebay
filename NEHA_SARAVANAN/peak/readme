@@ -1,0 +1,6 @@
+This program demonstrates two array-based problem-solving techniques: finding missing elements in a sequence and identifying peak elements in an array. The missing element functionality detects gaps between consecutive numbers in a sorted array, while the peak element functionality finds elements that are greater than their neighboring elements. The program helps in understanding array traversal, pattern recognition, conditional logic, and algorithm design in C++.
+Technologies Used: C++, Arrays, Loops, Conditional Statements
+* Find missing elements in a sorted sequence
+* Identify peak elements in an array
+* User input for array creation
+* Demonstrates array analysis and searching techniques
