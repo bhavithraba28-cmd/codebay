@@ -3,21 +3,25 @@
 #include<bits/stdc++.h>
 #include <chrono>
 using namespace std;
-struct contact
+struct mycontact
 {
     string name;
     string phonenum;
     string email;
-    contact* left;
-    contact* right;
+    string category; 
+    mycontact* left;
+    mycontact* right;
 };
-contact* root = nullptr;
-void insert(string name, string phonenum, string email)
+mycontact me;
+mycontact* root = nullptr;
+void insert(string name, string phonenum, string email, string category)
 {
-    contact* newcontact = new contact();
+    mycontact* newcontact = new mycontact();
+
     newcontact->name = name;
     newcontact->phonenum = phonenum;
     newcontact->email = email;
+    newcontact->category = category;
     newcontact->left = nullptr;
     newcontact->right = nullptr;
     if(root == nullptr)
@@ -26,7 +30,7 @@ void insert(string name, string phonenum, string email)
         return;
     }
 
-    contact* temp = root;
+    mycontact* temp = root;
     while(true)
     {
         if(name < temp->name)
@@ -49,7 +53,7 @@ void insert(string name, string phonenum, string email)
         }
     }
 }
-void inorder(contact* temp)
+void inorder(mycontact* temp)
 {
     if(temp == nullptr)
         return;
@@ -58,7 +62,7 @@ void inorder(contact* temp)
     cout << "Name: " << temp->name << ", Phone: " << temp->phonenum << ", Email: " << temp->email << endl;
     inorder(temp->right);
 }
-void preorder(contact* temp)
+void preorder(mycontact* temp)
 {
     if(temp == nullptr)
         return;
@@ -66,7 +70,7 @@ void preorder(contact* temp)
     preorder(temp->left);
     preorder(temp->right);
 }
-void postorder(contact* temp)
+void postorder(mycontact* temp)
 {
     if(temp == nullptr)
         return;
@@ -76,14 +80,24 @@ void postorder(contact* temp)
 }
 void display()
 {
-    cout << "Inorder: " << endl;
+    cout << "\n===== MY CONTACT =====\n";
+    cout << "Name     : " << me.name << endl;
+    cout << "Phone    : " << me.phonenum << endl;
+    cout << "Email    : " << me.email << endl;
+    cout << "Category : " << me.category << endl;
+
+    cout << "\n===== CONTACT LIST =====\n";
+
+    cout << "\nInorder:\n";
     inorder(root);
-    cout << "\nPreorder: " << endl; 
+
+    cout << "\nPreorder:\n";
     preorder(root);
-    cout<<"\nPostorder: " << endl;
+
+    cout << "\nPostorder:\n";
     postorder(root);
 }
-void search(contact* temp, string key)
+void search(mycontact* temp, string key)
 {
     if(temp == nullptr)
     {
@@ -100,31 +114,81 @@ void search(contact* temp, string key)
     else
        search(temp->right, key);
 }
+void groupContacts(mycontact* root,int &personNo,string category)
+{
+    if(root == NULL)
+        return;
 
+    groupContacts(root->left, personNo, category);
+
+    if(root->category == category)
+    {
+        cout << "Person " << ++personNo << endl;
+        cout << "Name     : " << root->name << endl;
+        cout << "Phone    : " << root->phonenum << endl;
+        cout << "Email    : " << root->email << endl;
+        cout << "Category : " << root->category << endl;
+        cout << "----------------------\n";
+    }
+
+    groupContacts(root->right, personNo, category);
+}
+void displayGroups(mycontact* root)
+{
+    int personNo = 0;
+
+    cout << "\n===== FRIENDS =====\n";
+    groupContacts(root, personNo, "Friend");
+
+    cout << "\n===== FAMILY =====\n";
+    groupContacts(root, personNo, "Family");
+
+    cout << "\n===== OFFICE =====\n";
+    groupContacts(root, personNo, "Office");
+
+    cout << "\n===== OTHERS =====\n";
+    groupContacts(root, personNo, "Others");
+}
 int main()
 {
-      auto start = chrono::high_resolution_clock::now();
+        me.name = "Bhavithra";
+        me.phonenum = "9876543210";
+        me.email = "bhavithra001@gmail.com";
+        me.category = "Owner";
+        auto start = chrono::high_resolution_clock::now();
         int n;
         cout << "Enter number of contacts: ";
             cin >> n;
         for(int i = 1; i <=n; i++)
        {
-            string name = "Person" + to_string(i);
-            string phone = to_string(9000000000LL + i);
+           string name = "Person" + to_string(i);
+           string phone = to_string(9000000000LL + i);
            string email = "person" + to_string(i) + "@example.com";
-
-            insert(name, phone, email);
-           
+           string category;
+            if(i % 4 == 1)
+             category = "Friend";
+            else if(i % 4 == 2)
+              category = "Family";
+            else if(i % 4 == 3)
+              category = "Office";
+            else
+              category = "Others";
+           insert(name, phone, email, category);
         }
         auto end = chrono::high_resolution_clock::now();
         cout<<"Insertion Time: "<< chrono::duration_cast<chrono::nanoseconds>(end - start).count() << " ns\n";
         auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
         cout<<"\nExecution Time: " << duration.count() << " microseconds" << endl;
         display();
+        auto searchStart = chrono::high_resolution_clock::now();
         search(root, "Person500");
         search(root, "Person1000");
         search(root, "Person11000");
-        end = chrono::high_resolution_clock::now();
-        cout << "Search Time: " << chrono::duration_cast<chrono::nanoseconds>(end - start).count()<< " ns\n";
+        auto searchEnd = chrono::high_resolution_clock::now();
+        cout << "Search Time: "<< chrono::duration_cast<chrono::nanoseconds>(searchEnd - searchStart).count()<< " ns\n";
+        displayGroups(root);
+       
+
+
         return 0;
 }
