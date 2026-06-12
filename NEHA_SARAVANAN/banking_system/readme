@@ -1,0 +1,112 @@
+# Bank Management System
+A simple Bank Management System implemented in C++ using a Singly Linked List .  
+This project allows users to create, search, delete, display, deposit, and withdraw money from bank accounts.
+
+Features
+- Create a new bank account
+- Store account details:
+  - Account number
+  - Account holder name
+  - Account balance
+- Display all accounts
+- Search account using account number
+- Delete an account
+- Deposit money into an account
+- Withdraw money from an account
+- Menu-driven console interface
+
+Technologies Used
+- C++
+- Object-Oriented Programming (OOP)
+- Structures
+- Singly Linked List
+- Dynamic Memory Allocation
+
+Concepts Implemented
+
+### Structure
+The project uses a structure named `account` which contains:
+
+- `accno` → Account number
+- `name` → Account holder name
+- `balance` → Account balance
+- `next` → Pointer to the next account node
+
+### Linked List
+Each bank account is stored as a node in a linked list.
+The linked list allows dynamic storage of accounts without a fixed size.
+
+## Operations
+
+### 1. Create Account
+Creates a new account and adds it to the end of the linked list.
+
+Example:
+Enter acc num: 101
+Enter name: Neha
+Enter balance: 5000
+
+Account created!
+
+### 2. Display Accounts
+Shows all stored account details.
+
+Example:
+Account details:
+
+Account no: 101
+Name: Neha
+Balance: 5000
+
+Account no: 102
+Name: Alex
+Balance: 7000
+
+### 3. Search Account
+Searches an account using the account number.
+
+Example:
+Enter account number: 101
+
+Account found
+Name: John
+Balance: 5000
+
+
+### 4. Delete Account
+Removes an account from the linked list.
+
+Example:
+Enter acc num: 101
+
+Account deleted
+
+
+### 5. Deposit Money
+Adds money to an existing account.
+
+Example:
+Enter Account number: 102
+Enter Amount: 2000
+Deposit successful
+
+
+### 6. Withdraw Money
+Subtracts money from an existing account.
+
+Example:
+Enter Account number: 102
+Amount: 1000
+Withdraw success
+
+
+## Menu
+The program provides the following menu:
+1.Create account
+2.Search account
+3.Delete account
+4.Display account
+5.For Deposit
+6.For Withdraw
+7.Exit
+
