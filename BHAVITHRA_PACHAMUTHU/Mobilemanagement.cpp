@@ -25,7 +25,7 @@ public:
     MobileManagement() {
         root=NULL;
     }
-    /* void insertMobile(Mobile* newMobile) {
+    void insertMobile(Mobile* newMobile) {
     if(root==NULL) {
         root=newMobile;
         return;
@@ -51,22 +51,7 @@ public:
             return;
         }
     }
-} */
-    Mobile*insertMobile(Mobile*root,Mobile*newMobile) {
-        if(root==NULL) {
-            return newMobile;
-        }
-        if(newMobile->mobileId<root->mobileId) {
-            root->left=insertMobile(root->left,newMobile);
-        }
-        else if(newMobile->mobileId>root->mobileId) {
-            root->right=insertMobile(root->right,newMobile);
-        }
-        else {
-            cout<<"Mobile ID already exists"<<endl;
-        }
-        return root;
-    }
+} 
     int nodeCount(Mobile*root){
         if(root==NULL){
         return 0;
@@ -137,61 +122,6 @@ public:
     void displayMobile(Mobile*temp) {
         cout << "ID: "<<temp->mobileId<< " | Model: "<<temp->modelName<< " | Brand: "<< temp->mobileBrand<< " | Price: " <<temp->mobilePrice<< " | Stock: "<< temp->mobileStock<<endl;
     }
-  /* void searchByModelName() {
-     string model;
-     found-false;
-     cout<<"Enter Mobile Name to search: ";
-     cin.ignore();
-     getline(cin,model);
-     auto start=high_resolution_clock::now();
-    queue<Mobile*>q;
-    if(root!=NULL){
-       q.push(root);
-    }
-    while(!q.empty()) {
-        Mobile* temp=q.top();
-        q.pop()
-        if(temp->modelName == model) {
-            cout << "Mobile Found:" << endl;
-            displayMobile(temp);
-            found = true;
-        }
-        if(temp->left!=NULL)
-           q.push(temp->left);
-        if(temp->right!=NULL)
-           q.push(temp->right);
-    }
-}
-    auto end=high_resolution_clock::now();
-    if(found == false) 
-    {
-        string upcomingModels[]={"iPhone 16", "Samsung S25", "Vivo V40"};
-        string stoppedModels[]={"Nokia 1100", "Samsung J2", "Vivo Y12"};
-        bool upcoming = false;
-        bool stopped = false;
-        for(int i=0;i<3;i++) {
-            if(model==upcomingModels[i]) {
-                upcoming=true;
-            }
-            if(model==stoppedModels[i]) {
-                stopped=true;
-            }
-        }
-        if(upcoming==true) {
-            cout<<"This model upcoming model.It will arrive soon."<< endl;
-        }
-        else if(stopped == true){
-            cout<<"This is old model. We stoped it."<< endl;
-        }
-        else {
-            cout<<"Model not found." << endl;
-        }
-    }
-    auto nano=duration_cast<nanoseconds>(end-start);
-    auto seconds=duration<double>(end-start);
-    cout<<"Time Taken: "<<nano.count()<<" ns"<<endl;
-    cout<<"Time Taken: "<<seconds.count()<<" s"<<endl;
-} */
    void searchByModel() {
     string model;
     bool found = false;
